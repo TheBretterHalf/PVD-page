@@ -1,5 +1,27 @@
 <!DOCTYPE html>
 <html>
+    <style>
+        hr {
+        border: none;
+        height: 20px;
+        color: #333;
+        background-color: #333;
+        }
+        .transparentbar {
+        background-repeat:no-repeat;
+        cursor:pointer;
+        outline:none;
+        border:none;
+        box-shadow:none; 
+        background-image: none;
+        background-color: transparent;
+        background: transparent;
+        border-color: transparent;
+        }
+        .blacktext {
+        color: #8395a7;
+        }
+    </style>
     <head>
         <title>City of Providence Home - City of Providence</title>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -21,15 +43,57 @@
                     <p style="text-align: center; margin: 0; display: inline-block text-transform:uppercase;">MAYOR JORGE O. ELORZA</p>
                 </div>
             </div>
-            <br>
         </nav>
+        <hr>
         <nav class "nav nav-fill bg-grey">
-                <a class="nav-item nav-link" href="#">CITY HALL</a>
-                <a class="nav-item nav-link" href="#">DOING BUSINESS</a>
-                <a class="nav-item nav-link" href="#">EVENTS</a>
-                <a class="nav-item nav-link" href="#">NEWS</a>
-                <a class="nav-item nav-link" href="#">PVD 311</a>
-                <a class="nav-item nav-link" href="#">EXPLORE</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="dropdown">
+                            <button class="btn btn-group-justified transparentbar" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <font class="blacktext">CITY HALL</font>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">I Want To...</a>
+                                <a class="dropdown-item" href="#">Mayor's Office</a>
+                                <a class="dropdown-item" href="#">Departments</a>
+                                <a class="dropdown-item" href="#">City Council</a>
+                                <a class="dropdown-item" href="#">Code of Ordinances</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="dropdown">
+                            <button class="btn btn-group-justified transparentbar" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <font class="blacktext">DOING <br> BUSINESS</font>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Starting a Business</a>
+                                <a class="dropdown-item" href="#">Construction</a>
+                                <a class="dropdown-item" href="#">Running a Business</a>
+                                <a class="dropdown-item" href="#">Ethics</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm blacktext">
+                        <a class="nav-item nav-link" href="#"><font class="blacktext">EVENTS</font></a>
+                    </div>
+                    <div class="col-sm blacktext">
+                        <a class="nav-item nav-link" href="#"><font class="blacktext">NEWS</font></a>
+                    </div>
+                    <div class="col-sm">
+                        <a class="nav-item nav-link" href="#"><font class="blacktext">PVD 311</font></a>
+                    </div>
+                    <div class="col-sm blacktext">
+                        <a class="nav-item nav-link" href="#"><font class="blacktext">EXPLORE</font></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div>
+                <img height="400px" width="110%" src="http://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg">
+            </div>
         </nav>
     </body>
 </html>
