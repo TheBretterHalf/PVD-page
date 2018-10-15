@@ -36,19 +36,17 @@
         /* Change color of dropdown links on hover */
         .dropdown-content a:hover {
          background-color:#dfe6e9;
+         border-bottom:5px solid orange;
         }
         
         /* Show the dropdown menu on hover */
         .dropdown:hover .dropdown-content {display: block;}
         
         /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        .dropdown:hover .dropbtn {border-bottom:5px solid orange;}
         
-        hr {
-        border: none;
-        height: 20px;
-        color: #333;
-        background-color: #333;
+        .othertopbuttons:hover {
+            border-bottom:5px solid orange;
         }
         .transparentbar {
         background-repeat:no-repeat;
@@ -63,6 +61,29 @@
         }
         .blacktext {
         color: #8395a7;
+        text-align:center;
+        }
+        .parent {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          height: 100%;
+        }
+        .child {
+          width: 10%;
+        }
+        .parent2 {
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          height: 100%;
+        }
+        .child2 {
+          width: 10%;
+        }
+        .firstborder{
+            border-top:5px solid black;
+            width: 100%;
         }
     </style>
     <head>
@@ -77,26 +98,25 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-<!--Div 1-->    <div class="col-sm">
+            <div class="container parent">
+<!--Div 1-->    <div class="col-sm child">
                     <p style="text-align: center; margin: 0; color: orange item">CITY OF PROVIDENCE</p>
                 </div>
-<!--Div 2-->    <div class="col-sm">
+<!--Div 2-->    <div class="col-sm child">
                     <img style="margin: 0; display: block; margin-left: auto; margin-right: auto; item" src="http://bit.ly/pvdlogo"/>
                 </div>
-<!--Div 3-->    <div class="col-sm">
-                    <p style="text-align: center; margin: 0; display: inline-block text-transform:uppercase; item">MAYOR JORGE O. ELORZA</p>
+<!--Div 3-->    <div class="col-sm child">
+                    <p style="text-align: center; margin: 0; display: inline-block; item">MAYOR JORGE O. ELORZA</p>
                 </div>
-                <div class="topnav">
+                <div class="topnav child">
                     <button type="button" class="btn btn-default" aria-label="Left Align">
                         <span class="fa fa-search" aria-hidden="true"></span>
                     </button>
                 </div>
             </div>
         </nav>
-        <hr>
         <nav class "nav nav-fill bg-grey">
-            <div class="container">
+            <div class="container firstborder">
                 <div class="row">
                     <div class="col-sm">
                         <div class="dropdown">
@@ -126,16 +146,16 @@
                         </div>
                     </div>
                     <div class="col-sm blacktext">
-                        <a class="nav-item nav-link" href="#"><font class="blacktext">EVENTS</font></a>
+                        <a class="nav-item nav-link othertopbuttons" href="#"><font class="blacktext">EVENTS</font></a>
                     </div>
                     <div class="col-sm blacktext">
-                        <a class="nav-item nav-link" href="#"><font class="blacktext">NEWS</font></a>
-                    </div>
-                    <div class="col-sm">
-                        <a class="nav-item nav-link" href="#"><font class="blacktext">PVD 311</font></a>
+                        <a class="nav-item nav-link othertopbuttons" href="#"><font class="blacktext">NEWS</font></a>
                     </div>
                     <div class="col-sm blacktext">
-                        <a class="nav-item nav-link" href="#"><font class="blacktext">EXPLORE</font></a>
+                        <a class="nav-item nav-link othertopbuttons" href="#"><font class="blacktext">PVD 311</font></a>
+                    </div>
+                    <div class="col-sm blacktext">
+                        <a class="nav-item nav-link othertopbuttons" href="#"><font class="blacktext">EXPLORE</font></a>
                     </div>
                 </div>
             </div>
