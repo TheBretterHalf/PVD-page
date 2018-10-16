@@ -4,6 +4,14 @@
         .topborder {
             border: 1px solid black;
         }
+        .topnavo:hover {
+            border-bottom: 2px solid orange;
+            text-decoration:none;
+        }
+        .topnavb:hover {
+            border-bottom: 2px solid black;
+            text-decoration:none;
+        }
         .dropbtn {
             background-color: #4CAF50;
             color: white;
@@ -39,17 +47,23 @@
         /* Change color of dropdown links on hover */
         .dropdown-content a:hover {
          background-color:#dfe6e9;
-         border-bottom:5px solid orange;
+         border-bottom:2px solid orange;
+         text-decoration:none;
         }
         
         /* Show the dropdown menu on hover */
         .dropdown:hover .dropdown-content {display: block;}
         
         /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {border-bottom:5px solid orange;}
+        .dropdown:hover .dropbtn {
+            border-bottom:2px solid orange;
+            text-decoration:none;
+        }
         
         .othertopbuttons:hover {
-            border-bottom:5px solid orange;
+            border-bottom:2px solid orange;
+            text-decoration:none;
+            padding-bottom:4px;
         }
         .transparentbar {
         background-repeat:no-repeat;
@@ -79,8 +93,8 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <div class="dropdown dropdown-menu-right">
+            <div class="container-sm">
+                <div class="dropdown dropdown-menu-right ">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Language
                   </button>
@@ -91,14 +105,16 @@
                         <button class="dropdown-item" type="button">Spainish</button>
                     </div>
                 </div>
-<!--Div 1-->    <div class=" col-sm">
-                    <p style="text-align: center; color: orange item">CITY OF PROVIDENCE</p>
+            </div>
+            <div class="container">
+<!--Div 1-->    <div class=" col-lg topnavo">
+                    <p style="text-align: center; display: inline-block; color:orange">CITY OF PROVIDENCE</p>
                 </div>
 <!--Div 2-->    <div class="col-sm">
                     <img style="margin:0; display:block; margin-left: auto; margin-right: auto; item" src="http://bit.ly/pvdlogo"/>
                 </div>
-<!--Div 3-->    <div class="col-sm">
-                    <p style="text-align: center; display: inline-block; item">MAYOR JORGE O. ELORZA</p>
+<!--Div 3-->    <div class="col-lg topnavb">
+                    <p style="text-align: center; display: inline-block;">MAYOR JORGE O. ELORZA</p>
                 </div>
                 <div class="topnav">
                     <button type="button" class="btn btn-default transparentbar largeicons" aria-label="Left Align">
@@ -160,7 +176,7 @@
         </nav>
         <nav>
             <div>
-                <img height="400px" width="110%" src="http://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg">
+                <img class="margin-left: auto; margin-right: auto;" height=400px width=110% src="http://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg">
             </div>
         </nav>
         <nav>
