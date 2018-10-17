@@ -80,6 +80,43 @@
         color: #8395a7;
         text-align:center;
         }
+        .langbutton {
+            background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+            outline:none;
+        }
+        .bodytextcol1 {
+            color: blue;
+            text-align: center;
+            font-size: 10px;
+            font-family: Arial;
+            font-weight: Bold;
+        }
+        .h1padding {
+            padding:5px;
+        }
+        .wantBtn {
+            height:100px;
+            width:400px;
+            
+            text-align: center;
+            background-color:orange;
+        }
+        .ghost {
+            color:white;
+        }
+        .ghost:hover {
+            background:white;
+            border:2px solid orange;
+            color:orange;
+        }
+        .whitetext {
+            font-weight:Bold;
+            font-size:30px;
+        }
     </style>
     <head>
         <title>City of Providence Home - City of Providence</title>
@@ -94,8 +131,8 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-sm">
-                <div class="dropdown dropdown-menu-right ">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown dropdown-menu-right">
+                  <button class="btn dropdown-toggle langbutton" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Language
                   </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -107,14 +144,14 @@
                 </div>
             </div>
             <div class="container">
-<!--Div 1-->    <div class=" col-lg topnavo">
-                    <p style="text-align: center; display: inline-block; color:orange">CITY OF PROVIDENCE</p>
+<!--Div 1-->    <div class=" col-md topnavo">
+                    <p style="text-align: center; margin-left: auto; margin-right: auto; color:orange">CITY OF PROVIDENCE</p>
                 </div>
 <!--Div 2-->    <div class="col-sm">
                     <img style="margin:0; display:block; margin-left: auto; margin-right: auto; item" src="http://bit.ly/pvdlogo"/>
                 </div>
-<!--Div 3-->    <div class="col-lg topnavb">
-                    <p style="text-align: center; display: inline-block;">MAYOR JORGE O. ELORZA</p>
+<!--Div 3-->    <div class="col-md topnavb">
+                    <p style="text-align: center; margin-left: auto; margin-left: auto; margin-right: auto;">MAYOR JORGE O. ELORZA</p>
                 </div>
                 <div class="topnav">
                     <button type="button" class="btn btn-default transparentbar largeicons" aria-label="Left Align">
@@ -179,12 +216,23 @@
                 <img class="margin-left: auto; margin-right: auto;" height=400px width=110% src="http://www.providenceri.gov/wp-content/uploads/2016/09/PVD.jpg">
             </div>
         </nav>
-        <nav>
-            <div "container">
-                <div "col">
-                    
+        <hr color="transparent" size=5>
+        <div "container">
+            <div class="row">
+                <div class="col-sm bodytextcol1">
+                  <h1 class="h1padding">What Can We Help You With?</h1>
+                  <div class="wantBtn">
+                      <button type="button" class="btn wantBtn rounded-0 ghost"><font class="whitetext">I WANT TO...</font></button>
+                  </div>
                 </div>
+                <div class="col-sm">
+                  One of three columns
+                </div>
+                <div class="col-sm">
+                  One of three columns
+                </div>
+              </div>
             </div>
-        </nav>
+        </div>
     </body>
 </html>
