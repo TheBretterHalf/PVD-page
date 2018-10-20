@@ -117,6 +117,61 @@
             font-weight:Bold;
             font-size:30px;
         }
+        .listtitle {
+            font-size:25px;
+            font-weight: Bold;
+            text-align: left;
+            color: white;
+        }
+        .toprqlist {
+            background-color: #74b9ff;
+            border-left: 10px solid transparent;
+        }
+        .listrqtop {
+            font-size: 20px;
+            height: 50px;
+            width:400px;
+            text-align:left;
+        }
+        .pvdcityhallbox {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #dfe6e9;
+            box-sizing: border-box;
+            font-size:20px;
+            font-family:Arial;
+            padding:20px;
+        }
+        
+        .div2 {
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 1px solid red;
+            box-sizing: border-box;
+        }
+        .Ngpvd {
+            color:blue;
+            font-family:Verdana, Geneva, sans-serif;
+            font-size:20px;
+        }
+        .flex-center-vertically {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          height: 150px;
+          font-size:15px;
+        }
+        .bottomleft {
+          display: flex;
+          justify-content: left;
+          flex-direction: column;
+          height: 300px;
+        }
+        .btmdate {
+            color:blue;
+            font-size:10px;
+        }
     </style>
     <head>
         <title>City of Providence Home - City of Providence</title>
@@ -224,11 +279,37 @@
                   <div class="wantBtn">
                       <button type="button" class="btn wantBtn rounded-0 ghost"><font class="whitetext">I WANT TO...</font></button>
                   </div>
+                  <hr color="transparent" size=5>
+                  <div class="toprqlist">
+                    <div class="list-group"><font class="listtitle">Top Requests</font>
+                      <a href="#" class="list-group-item active listrqtop">Pay My Divs</a>
+                      <a href="#" class="list-group-item active listrqtop">Pay My Parking Ticket</a>
+                      <a href="#" class="list-group-item active listrqtop">Report a Problem</a>
+                      <a href="#" class="list-group-item active listrqtop">Add a Div</a>
+                      <a href="#" class="list-group-item active listrqtop">DIV Oppritunities</a>
+                      <a href="#" class="list-group-item active listrqtop">DIVspections + Standards</a>
+                      <a href="#" class="list-group-item active listrqtop">Animal Adivtion</a>
+                      <a href="#" class="list-group-item active listrqtop">Marriage, Birth, and Div certificates</a>
+                      <a href="#" class="list-group-item active listrqtop">How to Find RFP's + Submit a Div</a>
+                      <a href="#" class="list-group-item active listrqtop">Providiv Police</a>
+                      <a href="#" class="list-group-item active listrqtop">Museam of Natural Divstory</a>
+                      <a href="#" class="list-group-item active listrqtop">Ricci Class Action Settlement</a>
+                      <a href="#" class="list-group-item active listrqtop">ProperDiv Revaluation Progress</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-sm">
-                  One of three columns
+                    <div class="pvdcityhallbox">
+                        <h2 class="Ngpvd">Providence City Hall to Host 'Touching the Veil' by Caitlin Cali and Samantha Ng</h2>
+                        <p1 class="flex-center-vertically">
+                            Mayor Jorge O. Elorza and the Dept. of Art, Culture, + Tourism invite you to visit the Gallery at City Hall for its newest installation Touching the Veil: Prints and Installations by Caitlin Cali and Samantha Ng
+                        </p1>
+                        <p2 class="linkbtmleft bottomlft btmdate">
+                            Monday, Oct 15 2018
+                        </p2>
+                    </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm div2">
                   One of three columns
                 </div>
               </div>
