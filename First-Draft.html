@@ -96,7 +96,9 @@
             font-weight: Bold;
         }
         .h1padding {
-            padding:5px;
+            padding-bottom:2px;
+            word-wrap:break-word;
+            max-width:400px;
         }
         .wantBtn {
             height:100px;
@@ -119,36 +121,22 @@
         }
         .listtitle {
             font-size:25px;
-            font-weight: Bold;
+            font-weight: bold;
             text-align: left;
             color: white;
         }
         .toprqlist {
             background-color: #74b9ff;
-            border-left: 10px solid transparent;
+            width: 5%;
+            height: 5%;
+            min-width: 400px;
+            min-height: 100px;
         }
         .listrqtop {
             font-size: 20px;
             height: 50px;
             width:400px;
             text-align:left;
-        }
-        .pvdcityhallbox {
-            width: 500px;
-            height: 300px;
-            border: 1px solid #dfe6e9;
-            box-sizing: border-box;
-            font-size:20px;
-            font-family:Arial;
-            padding:20px;
-        }
-        
-        .div2 {
-            width: 300px;
-            height: 100px;
-            padding: 50px;
-            border: 1px solid red;
-            box-sizing: border-box;
         }
         .Ngpvd {
             color:blue;
@@ -171,6 +159,10 @@
         .btmdate {
             color:blue;
             font-size:10px;
+        }
+        .leftside1div {
+            width:400px;
+            max-width:100%;
         }
     </style>
     <head>
@@ -274,7 +266,7 @@
         <hr color="transparent" size=5>
         <div "container">
             <div class="row">
-                <div class="col-sm bodytextcol1">
+                <div class="col-sm bodytextcol1 flex-shrink">
                   <h1 class="h1padding">What Can We Help You With?</h1>
                   <div class="wantBtn">
                       <button type="button" class="btn wantBtn rounded-0 ghost"><font class="whitetext">I WANT TO...</font></button>
@@ -299,18 +291,14 @@
                   </div>
                 </div>
                 <div class="col-sm">
-                    <div class="pvdcityhallbox">
-                        <h2 class="Ngpvd">Providence City Hall to Host 'Touching the Veil' by Caitlin Cali and Samantha Ng</h2>
-                        <p1 class="flex-center-vertically">
-                            Mayor Jorge O. Elorza and the Dept. of Art, Culture, + Tourism invite you to visit the Gallery at City Hall for its newest installation Touching the Veil: Prints and Installations by Caitlin Cali and Samantha Ng
-                        </p1>
-                        <p2 class="linkbtmleft bottomlft btmdate">
-                            Monday, Oct 15 2018
-                        </p2>
+                    <div class="card" style="width: 40rem;">
+                      <div class="card-body">
+                        <h5 class="card-title Ngpvd">Providence City Hall to Host 'Touching the Veil' by Caitlin Cali and Samantha Ng</h5>
+                        <p class="card-text flex-center-vertically"> Mayor Jorge O. Elorza and the Dept. of Art, Culture, + Tourism invite you to visit the Gallery at City Hall for its newest installation Touching the Veil: Prints and Installations by Caitlin Cali and Samantha Ng</p>
+                        <a href="#" class="card-link linkbtmleft bottomlft btmdate">Monday, Oct 15 2018</a>
+                        <a href="#" class="card-link">Card link</a>
+                      </div>
                     </div>
-                </div>
-                <div class="col-sm div2">
-                  One of three columns
                 </div>
               </div>
             </div>
